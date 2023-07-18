@@ -7,10 +7,9 @@ import "./App.css";
 
 
 const UserSelections = lazy(() => import("./Components/UserSelections"));
-const GifDisplay = lazy(() => import("./Components/GifsDisplay"));
 const Intro = lazy(() => import("./Components/Intro"));
 const Loading = lazy(() => import("./Components/Loading"));
-const NewLoading = lazy(() => import("./Components/NewLoading"));
+
 
 function App() {
   const [message, setMessage] = useState([]);

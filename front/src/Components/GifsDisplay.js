@@ -5,10 +5,6 @@ function GifDisplay({message}) {
   const [searchTerms, setSearchTerms] = useState([]);
   const [gifs, setGifs] = useState([]);
 
-  useEffect(() => {
-    searchGifs();
-  }, []);
-
   const searchGifs = async () => {
     const apiKey = 'LIVDSRZULELA';
     const limit = 3;
