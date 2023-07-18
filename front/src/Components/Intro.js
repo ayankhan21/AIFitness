@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import arrow from "../assets/icons8-down-unscreen.gif";
 import logo from '../assets/icons8-workout-100 (1).png'
 const Intro = () => {
   return (
@@ -15,7 +14,6 @@ const Intro = () => {
         </span><br />
         <span>Experience fitness redefined.</span>
       </div>
-      <img src={arrow} alt="ARROW" />
     </div>
   );
 };

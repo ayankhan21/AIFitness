@@ -39,7 +39,7 @@ async function chatGpt(userRequest) {
 app.post('/', async (req, res) => {
   try {
     const userRequest = req.body.data;
-    console.log(userRequest)
+    console.log(typeof(userRequest))
     const finalRequest = userRequest + "I want the prompt to be separated into workouts numbered so that i can display them in paragraphs. And can you add a few relavant links in the end from youtube which match the prompts given by the user?";
     const result = await chatGpt(finalRequest);
     res.send(result);
